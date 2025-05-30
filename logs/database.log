@@ -1,0 +1,398 @@
+2025-05-30 15:27:47,307 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Loan` MODIFY `interest_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `principal_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_payment` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:47,333 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Loan` ADD INDEX `modified`(`modified`)
+2025-05-30 15:27:47,781 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Proof Submission` MODIFY `exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_actual_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:48,034 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab Other Charges` MODIFY `min_taxable_income` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `percent` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_taxable_income` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:48,240 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTaxable Salary Slab` MODIFY `from_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `to_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `percent_deduction` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:48,441 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Timesheet` MODIFY `working_hours` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:48,647 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRetention Bonus` MODIFY `bonus_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:48,941 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Declaration` MODIFY `total_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_declared_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:49,168 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Leave` MODIFY `available_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `used_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_allocated_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pending_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `expired_leaves` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:49,452 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Entry` MODIFY `deduct_tax_for_unclaimed_employee_benefits` tinyint NOT NULL DEFAULT 0, MODIFY `number_of_employees` int NOT NULL DEFAULT 0, MODIFY `exchange_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `salary_slip_based_on_timesheet` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_tax_for_unsubmitted_tax_exemption_proof` tinyint NOT NULL DEFAULT 0, MODIFY `validate_attendance` tinyint NOT NULL DEFAULT 0, MODIFY `salary_slips_created` tinyint NOT NULL DEFAULT 0, MODIFY `salary_slips_submitted` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:27:49,624 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Application Detail` MODIFY `pay_against_benefit_claim` tinyint NOT NULL DEFAULT 0, MODIFY `max_benefit_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:49,843 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Incentive` MODIFY `incentive_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:50,080 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Sub Category` MODIFY `is_active` tinyint NOT NULL DEFAULT 1, MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:50,318 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab` MODIFY `allow_tax_exemption` tinyint NOT NULL DEFAULT 0, MODIFY `standard_tax_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `tax_relief_limit` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:27:50,566 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity Rule` MODIFY `minimum_year_for_gratuity` int NOT NULL DEFAULT 0, MODIFY `disable` tinyint NOT NULL DEFAULT 0, MODIFY `total_working_days_per_year` int NOT NULL DEFAULT 365
+2025-05-30 15:30:39,105 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy Detail` MODIFY `annual_allocation` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:39,603 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDaily Work Summary Group` MODIFY `enabled` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:30:39,911 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Application` MODIFY `leave_balance` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `follow_via_email` tinyint NOT NULL DEFAULT 1, MODIFY `total_leave_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `half_day` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:40,649 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Skill` MODIFY `proficiency` decimal(3,2)
+2025-05-30 15:30:41,146 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExit Interview` MODIFY `questionnaire_email_sent` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:42,052 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle Service` MODIFY `expense_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:42,774 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStaffing Plan` MODIFY `total_estimated_budget` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:42,995 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Promotion` MODIFY `revised_ctc` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `current_ctc` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:43,249 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Taxes and Charges` MODIFY `total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `tax_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:43,457 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Result Employee` MODIFY `hours` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:44,081 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Asset` MODIFY `cost` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `actual_cost` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:44,288 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal KRA` MODIFY `goal_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `goal_completion` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:44,478 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Boarding Activity` MODIFY `begin_on` int NOT NULL DEFAULT 0, MODIFY `duration` int NOT NULL DEFAULT 0, MODIFY `task_weight` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `required_for_employee_creation` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:44,691 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Goal` MODIFY `score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `score_earned` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:44,904 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Schedule Assignment` MODIFY `enabled` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:30:45,179 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Opening` MODIFY `planned_vacancies` int NOT NULL DEFAULT 0, MODIFY `upper_range` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `lower_range` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `publish_applications_received` tinyint NOT NULL DEFAULT 1, MODIFY `publish_salary_range` tinyint NOT NULL DEFAULT 0, MODIFY `publish` tinyint NOT NULL DEFAULT 0, MODIFY `vacancies` int NOT NULL DEFAULT 0
+2025-05-30 15:30:45,421 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTravel Itinerary` MODIFY `lodging_required` tinyint NOT NULL DEFAULT 0, MODIFY `travel_advance_required` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:45,876 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Event Employee` MODIFY `is_mandatory` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:30:46,090 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim Detail` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `sanctioned_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:46,307 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Transfer` MODIFY `create_new_employee_id` tinyint NOT NULL DEFAULT 0, MODIFY `reallocate_leaves` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:46,578 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `longitude` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `offshift` tinyint NOT NULL DEFAULT 0, MODIFY `skip_auto_attendance` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:47,282 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Feedback` MODIFY `average_rating` decimal(3,2)
+2025-05-30 15:30:47,520 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStaffing Plan Detail` MODIFY `current_openings` int NOT NULL DEFAULT 0, MODIFY `total_estimated_cost` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `current_count` int NOT NULL DEFAULT 0, MODIFY `number_of_positions` int NOT NULL DEFAULT 0, MODIFY `estimated_cost_per_position` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `vacancies` int NOT NULL DEFAULT 0
+2025-05-30 15:30:47,791 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Allocation` MODIFY `new_leaves_allocated` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `carry_forwarded_leaves_count` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `unused_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `carry_forward` tinyint NOT NULL DEFAULT 0, MODIFY `expired` tinyint NOT NULL DEFAULT 0, MODIFY `total_leaves_allocated` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_leaves_encashed` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:49,263 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Location` MODIFY `latitude` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `longitude` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `checkin_radius` int NOT NULL DEFAULT 0
+2025-05-30 15:30:49,543 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Performance Feedback` MODIFY `total_score` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:50,006 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Feedback Rating` MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rating` decimal(3,2)
+2025-05-30 15:30:50,519 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal` MODIFY `self_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `goal_score_percentage` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `avg_feedback_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rate_goals_manually` tinyint NOT NULL DEFAULT 0, MODIFY `final_score` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:51,681 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Grade` MODIFY `default_base_pay` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:52,147 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy Assignment` MODIFY `leaves_allocated` tinyint NOT NULL DEFAULT 0, MODIFY `carry_forward` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:52,406 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Block List` MODIFY `applies_to_all_departments` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:54,286 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Cycle` MODIFY `calculate_final_score_based_on_formula` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:54,558 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAttendance Request` MODIFY `include_holidays` tinyint NOT NULL DEFAULT 0, MODIFY `half_day` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:54,853 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoal` MODIFY `is_group` tinyint NOT NULL DEFAULT 0, MODIFY `progress` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rgt` int NOT NULL DEFAULT 0, MODIFY `lft` int NOT NULL DEFAULT 0
+2025-05-30 15:30:55,152 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Onboarding` MODIFY `notify_users_by_email` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:55,970 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Separation` MODIFY `notify_users_by_email` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:56,238 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Requisition` MODIFY `no_of_positions` int NOT NULL DEFAULT 0, MODIFY `time_to_fill` decimal(21,9), MODIFY `expected_compensation` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:56,489 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Type` MODIFY `maximum_carry_forwarded_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_ppl` tinyint NOT NULL DEFAULT 0, MODIFY `max_encashable_leaves` int NOT NULL DEFAULT 0, MODIFY `allow_negative` tinyint NOT NULL DEFAULT 0, MODIFY `is_optional_leave` tinyint NOT NULL DEFAULT 0, MODIFY `include_holiday` tinyint NOT NULL DEFAULT 0, MODIFY `max_leaves_allowed` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `allow_encashment` tinyint NOT NULL DEFAULT 0, MODIFY `max_continuous_days_allowed` int NOT NULL DEFAULT 0, MODIFY `expire_carry_forwarded_leaves_after_days` int NOT NULL DEFAULT 0, MODIFY `is_compensatory` tinyint NOT NULL DEFAULT 0, MODIFY `non_encashable_leaves` int NOT NULL DEFAULT 0, MODIFY `allow_over_allocation` tinyint NOT NULL DEFAULT 0, MODIFY `is_lwp` tinyint NOT NULL DEFAULT 0, MODIFY `fraction_of_daily_salary_per_leave` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `applicable_after` int NOT NULL DEFAULT 0, MODIFY `is_earned_leave` tinyint NOT NULL DEFAULT 0, MODIFY `is_carry_forward` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:56,866 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim` MODIFY `is_paid` tinyint NOT NULL DEFAULT 0, MODIFY `total_claimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_advance_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_amount_reimbursed` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_taxes_and_charges` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `grand_total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_sanctioned_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:57,347 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim Type` MODIFY `deferred_expense_account` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:57,838 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCompensatory Leave Request` MODIFY `half_day` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:30:58,326 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Round` MODIFY `expected_average_rating` decimal(3,2)
+2025-05-30 15:30:58,570 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTravel Request Costing` MODIFY `total_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `funded_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `sponsored_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:58,873 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Advance` MODIFY `exchange_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `return_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pending_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `advance_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `paid_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `repay_unclaimed_amount_from_salary` tinyint NOT NULL DEFAULT 0, MODIFY `claimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:30:59,171 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview` MODIFY `reminded` tinyint NOT NULL DEFAULT 0, MODIFY `expected_average_rating` decimal(3,2), MODIFY `average_rating` decimal(3,2)
+2025-05-30 15:30:59,811 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAttendance` MODIFY `modify_half_day_status` tinyint NOT NULL DEFAULT 0, MODIFY `working_hours` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `late_entry` tinyint NOT NULL DEFAULT 0, MODIFY `early_exit` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:00,130 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle Log` MODIFY `fuel_qty` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `last_odometer` int NOT NULL DEFAULT 0, MODIFY `odometer` int NOT NULL DEFAULT 0, MODIFY `price` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:00,392 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Statement` MODIFY `total_receivable_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_asset_recovery_cost` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_payable_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:00,662 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Event` MODIFY `has_certificate` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:00,887 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim Advance` MODIFY `advance_paid` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `return_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `allocated_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `unclaimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:01,131 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Type` MODIFY `allow_check_out_after_shift_end_time` int NOT NULL DEFAULT 60, MODIFY `enable_auto_attendance` tinyint NOT NULL DEFAULT 0, MODIFY `enable_late_entry_marking` tinyint NOT NULL DEFAULT 0, MODIFY `mark_auto_attendance_on_holidays` tinyint NOT NULL DEFAULT 0, MODIFY `enable_early_exit_marking` tinyint NOT NULL DEFAULT 0, MODIFY `begin_check_in_before_shift_start_time` int NOT NULL DEFAULT 60, MODIFY `early_exit_grace_period` int NOT NULL DEFAULT 0, MODIFY `late_entry_grace_period` int NOT NULL DEFAULT 0, MODIFY `working_hours_threshold_for_half_day` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `working_hours_threshold_for_absent` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `auto_update_last_sync` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:01,644 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Referral` MODIFY `is_applicable_for_referral_bonus` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:31:01,989 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Applicant` MODIFY `applicant_rating` decimal(3,2), MODIFY `upper_range` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `lower_range` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:02,161 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Template Goal` MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:02,411 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Encashment` MODIFY `leave_balance` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `paid_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pay_via_payment_entry` tinyint NOT NULL DEFAULT 0, MODIFY `actual_encashable_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `encashment_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `encashment_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:02,757 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Period` MODIFY `is_active` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:03,015 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSkill Assessment` MODIFY `rating` decimal(3,2)
+2025-05-30 15:31:03,240 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPWA Notification` MODIFY `read` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:03,906 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Ledger Entry` MODIFY `is_expired` tinyint NOT NULL DEFAULT 0, MODIFY `is_carry_forward` tinyint NOT NULL DEFAULT 0, MODIFY `is_lwp` tinyint NOT NULL DEFAULT 0, MODIFY `leaves` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:04,383 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Outstanding Statement` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `paid_via_salary_slip` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:07,781 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Declaration Category` MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:07,983 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Proof Submission Detail` MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:08,220 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Structure` MODIFY `total_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `leave_encashment_amount_per_day` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_benefits` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `net_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_earning` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `salary_slip_based_on_timesheet` tinyint NOT NULL DEFAULT 0, MODIFY `hour_rate` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:08,633 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Withholding Cycle` MODIFY `is_salary_released` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:08,869 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Application` MODIFY `max_benefits` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `remaining_benefit` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pro_rata_dispensed_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:09,110 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Other Income` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:09,410 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAdditional Salary` MODIFY `deduct_full_tax_on_selected_payroll_date` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `is_recurring` tinyint NOT NULL DEFAULT 0, MODIFY `overwrite_salary_structure_amount` tinyint NOT NULL DEFAULT 1, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:09,646 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Detail` MODIFY `additional_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `do_not_include_in_total` tinyint NOT NULL DEFAULT 0, MODIFY `amount_based_on_formula` tinyint NOT NULL DEFAULT 0, MODIFY `tax_on_flexible_benefit` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `variable_based_on_taxable_salary` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_full_tax_on_selected_payroll_date` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `statistical_component` tinyint NOT NULL DEFAULT 0, MODIFY `is_tax_applicable` tinyint NOT NULL DEFAULT 0, MODIFY `depends_on_payment_days` tinyint NOT NULL DEFAULT 0, MODIFY `default_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `tax_on_additional_salary` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `exempted_from_income_tax` tinyint NOT NULL DEFAULT 0, MODIFY `is_flexible_benefit` tinyint NOT NULL DEFAULT 0, MODIFY `year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_recurring_additional_salary` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:09,886 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity` MODIFY `paid_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pay_via_salary_slip` tinyint NOT NULL DEFAULT 1, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `current_work_experience` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:10,289 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Withholding` MODIFY `number_of_withholding_cycles` int NOT NULL DEFAULT 0
+2025-05-30 15:31:11,218 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip` MODIFY `standard_tax_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_working_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `gross_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_month_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `deduct_tax_for_unsubmitted_tax_exemption_proof` tinyint NOT NULL DEFAULT 0, MODIFY `base_net_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `salary_slip_based_on_timesheet` tinyint NOT NULL DEFAULT 0, MODIFY `rounded_total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_hour_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_rounded_total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_earnings` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `ctc` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `income_from_other_sources` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `unmarked_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_income_tax` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `deduct_tax_for_unclaimed_employee_benefits` tinyint NOT NULL DEFAULT 0, MODIFY `base_gross_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_gross_year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_total_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `tax_exemption_declaration` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `absent_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `month_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `leave_without_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `payment_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_working_hours` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `annual_taxable_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `income_tax_deducted_till_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `exchange_rate` decimal(21,9) NOT NULL DEFAULT 1.0, MODIFY `net_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `gross_year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `deductions_before_tax_calculation` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `current_month_income_tax` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `hour_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `non_taxable_earnings` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `future_income_tax_deductions` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:11,516 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Component` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `variable_based_on_taxable_salary` tinyint NOT NULL DEFAULT 0, MODIFY `depends_on_payment_days` tinyint NOT NULL DEFAULT 1, MODIFY `amount_based_on_formula` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_full_tax_on_selected_payroll_date` tinyint NOT NULL DEFAULT 0, MODIFY `is_income_tax_component` tinyint NOT NULL DEFAULT 0, MODIFY `is_tax_applicable` tinyint NOT NULL DEFAULT 1, MODIFY `is_flexible_benefit` tinyint NOT NULL DEFAULT 0, MODIFY `exempted_from_income_tax` tinyint NOT NULL DEFAULT 0, MODIFY `max_benefit_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `round_to_the_nearest_integer` tinyint NOT NULL DEFAULT 0, MODIFY `pay_against_benefit_claim` tinyint NOT NULL DEFAULT 0, MODIFY `statistical_component` tinyint NOT NULL DEFAULT 0, MODIFY `only_tax_impact` tinyint NOT NULL DEFAULT 0, MODIFY `do_not_include_in_total` tinyint NOT NULL DEFAULT 0, MODIFY `create_separate_payment_entry_against_benefit_claim` tinyint NOT NULL DEFAULT 0, MODIFY `remove_if_zero_valued` tinyint NOT NULL DEFAULT 1, MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:11,795 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Structure Assignment` MODIFY `tax_deducted_till_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `taxable_earnings_till_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `variable` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:12,046 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Claim` MODIFY `claimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_amount_eligible` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pay_against_benefit_claim` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:12,302 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity Rule Slab` MODIFY `from_year` int NOT NULL DEFAULT 0, MODIFY `to_year` int NOT NULL DEFAULT 0, MODIFY `fraction_of_applicable_earnings` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:12,497 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Employee Detail` MODIFY `is_salary_withheld` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:13,159 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Category` MODIFY `is_active` tinyint NOT NULL DEFAULT 1, MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:13,420 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Cost Center` MODIFY `percentage` int NOT NULL DEFAULT 0
+2025-05-30 15:31:13,605 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Loan` MODIFY `interest_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_payment` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `principal_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:14,214 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Proof Submission` MODIFY `exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_actual_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:14,486 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab Other Charges` MODIFY `min_taxable_income` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `percent` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_taxable_income` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:14,708 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTaxable Salary Slab` MODIFY `percent_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `from_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `to_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:14,891 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Timesheet` MODIFY `working_hours` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:15,114 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRetention Bonus` MODIFY `bonus_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:15,376 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Declaration` MODIFY `total_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_declared_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:15,619 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Leave` MODIFY `available_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pending_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_allocated_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `expired_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `used_leaves` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:15,924 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Entry` MODIFY `salary_slips_submitted` tinyint NOT NULL DEFAULT 0, MODIFY `salary_slip_based_on_timesheet` tinyint NOT NULL DEFAULT 0, MODIFY `number_of_employees` int NOT NULL DEFAULT 0, MODIFY `salary_slips_created` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_tax_for_unsubmitted_tax_exemption_proof` tinyint NOT NULL DEFAULT 0, MODIFY `exchange_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `validate_attendance` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_tax_for_unclaimed_employee_benefits` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:16,181 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Application Detail` MODIFY `max_benefit_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pay_against_benefit_claim` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:31:16,439 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Incentive` MODIFY `incentive_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:16,676 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Sub Category` MODIFY `is_active` tinyint NOT NULL DEFAULT 1, MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:16,949 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab` MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `allow_tax_exemption` tinyint NOT NULL DEFAULT 0, MODIFY `standard_tax_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `tax_relief_limit` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:31:17,209 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity Rule` MODIFY `minimum_year_for_gratuity` int NOT NULL DEFAULT 0, MODIFY `disable` tinyint NOT NULL DEFAULT 0, MODIFY `total_working_days_per_year` int NOT NULL DEFAULT 365
+2025-05-30 15:32:55,407 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy Detail` MODIFY `annual_allocation` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:32:55,870 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDaily Work Summary Group` MODIFY `enabled` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:32:56,177 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Application` MODIFY `total_leave_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `leave_balance` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `follow_via_email` tinyint NOT NULL DEFAULT 1, MODIFY `half_day` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:32:56,929 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Skill` MODIFY `proficiency` decimal(3,2)
+2025-05-30 15:32:57,448 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExit Interview` MODIFY `questionnaire_email_sent` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:32:58,439 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle Service` MODIFY `expense_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:32:59,183 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStaffing Plan` MODIFY `total_estimated_budget` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:32:59,428 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Promotion` MODIFY `revised_ctc` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `current_ctc` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:32:59,732 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Taxes and Charges` MODIFY `total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `tax_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:32:59,962 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Result Employee` MODIFY `hours` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:00,594 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Asset` MODIFY `cost` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `actual_cost` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:00,804 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal KRA` MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `goal_completion` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `goal_score` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:00,997 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Boarding Activity` MODIFY `duration` int NOT NULL DEFAULT 0, MODIFY `begin_on` int NOT NULL DEFAULT 0, MODIFY `required_for_employee_creation` tinyint NOT NULL DEFAULT 0, MODIFY `task_weight` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:01,210 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Goal` MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `score_earned` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `score` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:01,434 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Schedule Assignment` MODIFY `enabled` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:33:01,764 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Opening` MODIFY `vacancies` int NOT NULL DEFAULT 0, MODIFY `publish_applications_received` tinyint NOT NULL DEFAULT 1, MODIFY `upper_range` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `publish_salary_range` tinyint NOT NULL DEFAULT 0, MODIFY `lower_range` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `planned_vacancies` int NOT NULL DEFAULT 0, MODIFY `publish` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:02,036 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTravel Itinerary` MODIFY `lodging_required` tinyint NOT NULL DEFAULT 0, MODIFY `travel_advance_required` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:02,473 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Event Employee` MODIFY `is_mandatory` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:33:02,690 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim Detail` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `sanctioned_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:02,930 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Transfer` MODIFY `create_new_employee_id` tinyint NOT NULL DEFAULT 0, MODIFY `reallocate_leaves` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:03,215 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `offshift` tinyint NOT NULL DEFAULT 0, MODIFY `latitude` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `skip_auto_attendance` tinyint NOT NULL DEFAULT 0, MODIFY `longitude` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:04,126 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Feedback` MODIFY `average_rating` decimal(3,2)
+2025-05-30 15:33:04,379 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStaffing Plan Detail` MODIFY `estimated_cost_per_position` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `vacancies` int NOT NULL DEFAULT 0, MODIFY `current_openings` int NOT NULL DEFAULT 0, MODIFY `total_estimated_cost` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `current_count` int NOT NULL DEFAULT 0, MODIFY `number_of_positions` int NOT NULL DEFAULT 0
+2025-05-30 15:33:04,658 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Allocation` MODIFY `total_leaves_allocated` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `carry_forwarded_leaves_count` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `unused_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `new_leaves_allocated` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `carry_forward` tinyint NOT NULL DEFAULT 0, MODIFY `total_leaves_encashed` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `expired` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:06,161 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Location` MODIFY `checkin_radius` int NOT NULL DEFAULT 0, MODIFY `latitude` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `longitude` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:06,442 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Performance Feedback` MODIFY `total_score` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:06,994 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Feedback Rating` MODIFY `rating` decimal(3,2), MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:07,550 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal` MODIFY `total_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rate_goals_manually` tinyint NOT NULL DEFAULT 0, MODIFY `avg_feedback_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `self_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `final_score` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `goal_score_percentage` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:08,806 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Grade` MODIFY `default_base_pay` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:09,283 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy Assignment` MODIFY `leaves_allocated` tinyint NOT NULL DEFAULT 0, MODIFY `carry_forward` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:09,535 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Block List` MODIFY `applies_to_all_departments` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:11,541 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Cycle` MODIFY `calculate_final_score_based_on_formula` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:11,868 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAttendance Request` MODIFY `half_day` tinyint NOT NULL DEFAULT 0, MODIFY `include_holidays` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:12,193 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoal` MODIFY `is_group` tinyint NOT NULL DEFAULT 0, MODIFY `progress` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rgt` int NOT NULL DEFAULT 0, MODIFY `lft` int NOT NULL DEFAULT 0
+2025-05-30 15:33:12,473 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Onboarding` MODIFY `notify_users_by_email` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:13,342 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Separation` MODIFY `notify_users_by_email` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:13,638 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Requisition` MODIFY `no_of_positions` int NOT NULL DEFAULT 0, MODIFY `time_to_fill` decimal(21,9), MODIFY `expected_compensation` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:13,900 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Type` MODIFY `is_earned_leave` tinyint NOT NULL DEFAULT 0, MODIFY `is_carry_forward` tinyint NOT NULL DEFAULT 0, MODIFY `include_holiday` tinyint NOT NULL DEFAULT 0, MODIFY `max_continuous_days_allowed` int NOT NULL DEFAULT 0, MODIFY `allow_over_allocation` tinyint NOT NULL DEFAULT 0, MODIFY `is_compensatory` tinyint NOT NULL DEFAULT 0, MODIFY `allow_encashment` tinyint NOT NULL DEFAULT 0, MODIFY `max_encashable_leaves` int NOT NULL DEFAULT 0, MODIFY `is_ppl` tinyint NOT NULL DEFAULT 0, MODIFY `non_encashable_leaves` int NOT NULL DEFAULT 0, MODIFY `fraction_of_daily_salary_per_leave` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `maximum_carry_forwarded_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_optional_leave` tinyint NOT NULL DEFAULT 0, MODIFY `expire_carry_forwarded_leaves_after_days` int NOT NULL DEFAULT 0, MODIFY `max_leaves_allowed` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `applicable_after` int NOT NULL DEFAULT 0, MODIFY `is_lwp` tinyint NOT NULL DEFAULT 0, MODIFY `allow_negative` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:14,305 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim` MODIFY `total_advance_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `grand_total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_taxes_and_charges` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_paid` tinyint NOT NULL DEFAULT 0, MODIFY `total_sanctioned_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_amount_reimbursed` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_claimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:14,777 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim Type` MODIFY `deferred_expense_account` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:15,245 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCompensatory Leave Request` MODIFY `half_day` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:15,751 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Round` MODIFY `expected_average_rating` decimal(3,2)
+2025-05-30 15:33:16,007 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTravel Request Costing` MODIFY `total_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `sponsored_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `funded_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:16,309 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Advance` MODIFY `pending_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `repay_unclaimed_amount_from_salary` tinyint NOT NULL DEFAULT 0, MODIFY `advance_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `return_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `paid_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `exchange_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `claimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:16,570 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview` MODIFY `expected_average_rating` decimal(3,2), MODIFY `average_rating` decimal(3,2), MODIFY `reminded` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:17,078 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAttendance` MODIFY `working_hours` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `late_entry` tinyint NOT NULL DEFAULT 0, MODIFY `early_exit` tinyint NOT NULL DEFAULT 0, MODIFY `modify_half_day_status` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:17,395 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle Log` MODIFY `last_odometer` int NOT NULL DEFAULT 0, MODIFY `price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `fuel_qty` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `odometer` int NOT NULL DEFAULT 0
+2025-05-30 15:33:17,641 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Statement` MODIFY `total_asset_recovery_cost` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_receivable_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_payable_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:17,935 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Event` MODIFY `has_certificate` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:18,154 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExpense Claim Advance` MODIFY `return_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `allocated_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `unclaimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `advance_paid` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:18,433 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Type` MODIFY `mark_auto_attendance_on_holidays` tinyint NOT NULL DEFAULT 0, MODIFY `enable_early_exit_marking` tinyint NOT NULL DEFAULT 0, MODIFY `begin_check_in_before_shift_start_time` int NOT NULL DEFAULT 60, MODIFY `early_exit_grace_period` int NOT NULL DEFAULT 0, MODIFY `working_hours_threshold_for_half_day` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `late_entry_grace_period` int NOT NULL DEFAULT 0, MODIFY `enable_auto_attendance` tinyint NOT NULL DEFAULT 0, MODIFY `auto_update_last_sync` tinyint NOT NULL DEFAULT 0, MODIFY `enable_late_entry_marking` tinyint NOT NULL DEFAULT 0, MODIFY `allow_check_out_after_shift_end_time` int NOT NULL DEFAULT 60, MODIFY `working_hours_threshold_for_absent` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:18,932 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Referral` MODIFY `is_applicable_for_referral_bonus` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:33:19,218 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Applicant` MODIFY `upper_range` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `lower_range` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `applicant_rating` decimal(3,2)
+2025-05-30 15:33:19,475 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Template Goal` MODIFY `per_weightage` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:19,733 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Encashment` MODIFY `leave_balance` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pay_via_payment_entry` tinyint NOT NULL DEFAULT 0, MODIFY `paid_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `encashment_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `actual_encashable_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `encashment_days` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:19,994 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Period` MODIFY `is_active` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:20,238 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSkill Assessment` MODIFY `rating` decimal(3,2)
+2025-05-30 15:33:20,448 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPWA Notification` MODIFY `read` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:21,119 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Ledger Entry` MODIFY `is_lwp` tinyint NOT NULL DEFAULT 0, MODIFY `leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_expired` tinyint NOT NULL DEFAULT 0, MODIFY `is_carry_forward` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:21,632 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Outstanding Statement` MODIFY `paid_via_salary_slip` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:24,837 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Declaration Category` MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:25,048 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Proof Submission Detail` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:25,300 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Structure` MODIFY `salary_slip_based_on_timesheet` tinyint NOT NULL DEFAULT 0, MODIFY `max_benefits` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `net_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `hour_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `leave_encashment_amount_per_day` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_earning` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:25,733 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Withholding Cycle` MODIFY `is_salary_released` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:25,984 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Application` MODIFY `pro_rata_dispensed_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `remaining_benefit` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_benefits` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:26,257 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Other Income` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:26,579 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAdditional Salary` MODIFY `overwrite_salary_structure_amount` tinyint NOT NULL DEFAULT 1, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_recurring` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_full_tax_on_selected_payroll_date` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:26,845 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Detail` MODIFY `tax_on_additional_salary` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_recurring_additional_salary` tinyint NOT NULL DEFAULT 0, MODIFY `tax_on_flexible_benefit` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `exempted_from_income_tax` tinyint NOT NULL DEFAULT 0, MODIFY `additional_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `variable_based_on_taxable_salary` tinyint NOT NULL DEFAULT 0, MODIFY `do_not_include_in_total` tinyint NOT NULL DEFAULT 0, MODIFY `is_flexible_benefit` tinyint NOT NULL DEFAULT 0, MODIFY `depends_on_payment_days` tinyint NOT NULL DEFAULT 0, MODIFY `statistical_component` tinyint NOT NULL DEFAULT 0, MODIFY `amount_based_on_formula` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `deduct_full_tax_on_selected_payroll_date` tinyint NOT NULL DEFAULT 0, MODIFY `default_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_tax_applicable` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:27,095 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity` MODIFY `pay_via_salary_slip` tinyint NOT NULL DEFAULT 1, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `paid_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `current_work_experience` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:27,376 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Withholding` MODIFY `number_of_withholding_cycles` int NOT NULL DEFAULT 0
+2025-05-30 15:33:28,222 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip` MODIFY `deduct_tax_for_unsubmitted_tax_exemption_proof` tinyint NOT NULL DEFAULT 0, MODIFY `leave_without_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_working_hours` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `gross_year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_gross_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `hour_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `net_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_rounded_total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `deduct_tax_for_unclaimed_employee_benefits` tinyint NOT NULL DEFAULT 0, MODIFY `month_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `unmarked_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_earnings` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `tax_exemption_declaration` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `payment_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `income_tax_deducted_till_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_income_tax` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_working_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_gross_year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `absent_days` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_total_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `rounded_total` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `gross_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_net_pay` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `income_from_other_sources` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `year_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `standard_tax_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_month_to_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `annual_taxable_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `ctc` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `future_income_tax_deductions` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `non_taxable_earnings` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `salary_slip_based_on_timesheet` tinyint NOT NULL DEFAULT 0, MODIFY `deductions_before_tax_calculation` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `exchange_rate` decimal(21,9) NOT NULL DEFAULT 1.0, MODIFY `current_month_income_tax` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base_hour_rate` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:28,523 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Component` MODIFY `create_separate_payment_entry_against_benefit_claim` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `only_tax_impact` tinyint NOT NULL DEFAULT 0, MODIFY `amount_based_on_formula` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `max_benefit_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `round_to_the_nearest_integer` tinyint NOT NULL DEFAULT 0, MODIFY `depends_on_payment_days` tinyint NOT NULL DEFAULT 1, MODIFY `do_not_include_in_total` tinyint NOT NULL DEFAULT 0, MODIFY `pay_against_benefit_claim` tinyint NOT NULL DEFAULT 0, MODIFY `is_tax_applicable` tinyint NOT NULL DEFAULT 1, MODIFY `is_flexible_benefit` tinyint NOT NULL DEFAULT 0, MODIFY `statistical_component` tinyint NOT NULL DEFAULT 0, MODIFY `variable_based_on_taxable_salary` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_full_tax_on_selected_payroll_date` tinyint NOT NULL DEFAULT 0, MODIFY `exempted_from_income_tax` tinyint NOT NULL DEFAULT 0, MODIFY `is_income_tax_component` tinyint NOT NULL DEFAULT 0, MODIFY `remove_if_zero_valued` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:33:28,797 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Structure Assignment` MODIFY `variable` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `base` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `tax_deducted_till_date` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `taxable_earnings_till_date` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:29,071 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Claim` MODIFY `max_amount_eligible` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pay_against_benefit_claim` tinyint NOT NULL DEFAULT 0, MODIFY `claimed_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:29,323 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity Rule Slab` MODIFY `fraction_of_applicable_earnings` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `from_year` int NOT NULL DEFAULT 0, MODIFY `to_year` int NOT NULL DEFAULT 0
+2025-05-30 15:33:29,532 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Employee Detail` MODIFY `is_salary_withheld` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:30,138 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Category` MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_active` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:33:30,383 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Cost Center` MODIFY `percentage` int NOT NULL DEFAULT 0
+2025-05-30 15:33:30,588 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Loan` MODIFY `interest_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `principal_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_payment` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:31,027 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Proof Submission` MODIFY `total_actual_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:31,278 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab Other Charges` MODIFY `min_taxable_income` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_taxable_income` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `percent` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:31,478 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTaxable Salary Slab` MODIFY `percent_deduction` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `from_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `to_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:31,691 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Timesheet` MODIFY `working_hours` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:31,942 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRetention Bonus` MODIFY `bonus_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:32,213 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Declaration` MODIFY `total_declared_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:32,502 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Slip Leave` MODIFY `total_allocated_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `used_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `expired_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `available_leaves` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pending_leaves` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:32,785 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Entry` MODIFY `deduct_tax_for_unclaimed_employee_benefits` tinyint NOT NULL DEFAULT 0, MODIFY `deduct_tax_for_unsubmitted_tax_exemption_proof` tinyint NOT NULL DEFAULT 0, MODIFY `validate_attendance` tinyint NOT NULL DEFAULT 0, MODIFY `number_of_employees` int NOT NULL DEFAULT 0, MODIFY `salary_slip_based_on_timesheet` tinyint NOT NULL DEFAULT 0, MODIFY `exchange_rate` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `salary_slips_created` tinyint NOT NULL DEFAULT 0, MODIFY `salary_slips_submitted` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:33,011 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Application Detail` MODIFY `max_benefit_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `pay_against_benefit_claim` tinyint NOT NULL DEFAULT 0, MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:33,230 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Incentive` MODIFY `incentive_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-05-30 15:33:33,506 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Sub Category` MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_active` tinyint NOT NULL DEFAULT 1
+2025-05-30 15:33:33,799 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab` MODIFY `standard_tax_exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `allow_tax_exemption` tinyint NOT NULL DEFAULT 0, MODIFY `tax_relief_limit` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2025-05-30 15:33:34,051 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity Rule` MODIFY `total_working_days_per_year` int NOT NULL DEFAULT 365, MODIFY `disable` tinyint NOT NULL DEFAULT 0, MODIFY `minimum_year_for_gratuity` int NOT NULL DEFAULT 0
