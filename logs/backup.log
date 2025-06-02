@@ -1,0 +1,30 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_01ee661365ecd95f --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _01ee661365ecd95f | /usr/bin/gzip >> ./erpnext.localhost/private/backups/20250531_120005-erpnext_localhost-database.sql.gz
+
+Backup Summary for erpnext.localhost at 2025-05-31 12:00:13.386848
+Config  : /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250531_120005-erpnext_localhost-site_config_backup.json 213.0B
+Database: /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250531_120005-erpnext_localhost-database.sql.gz 945.4KiB
+Backup for Site erpnext.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_01ee661365ecd95f --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _01ee661365ecd95f | /usr/bin/gzip >> ./erpnext.localhost/private/backups/20250531_180005-erpnext_localhost-database.sql.gz
+
+Backup Summary for erpnext.localhost at 2025-05-31 18:00:17.754418
+Config  : /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250531_180005-erpnext_localhost-site_config_backup.json 213.0B
+Database: /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250531_180005-erpnext_localhost-database.sql.gz 957.2KiB
+Backup for Site erpnext.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_01ee661365ecd95f --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _01ee661365ecd95f | /usr/bin/gzip >> ./erpnext.localhost/private/backups/20250601_120004-erpnext_localhost-database.sql.gz
+
+Backup Summary for erpnext.localhost at 2025-06-01 12:00:09.551232
+Config  : /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250601_120004-erpnext_localhost-site_config_backup.json 213.0B
+Database: /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250601_120004-erpnext_localhost-database.sql.gz 984.8KiB
+Backup for Site erpnext.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_01ee661365ecd95f --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _01ee661365ecd95f | /usr/bin/gzip >> ./erpnext.localhost/private/backups/20250601_180007-erpnext_localhost-database.sql.gz
+
+Backup Summary for erpnext.localhost at 2025-06-01 18:00:15.084386
+Config  : /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250601_180007-erpnext_localhost-site_config_backup.json 213.0B
+Database: /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250601_180007-erpnext_localhost-database.sql.gz 996.0KiB
+Backup for Site erpnext.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_01ee661365ecd95f --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _01ee661365ecd95f | /usr/bin/gzip >> ./erpnext.localhost/private/backups/20250602_120007-erpnext_localhost-database.sql.gz
+
+Backup Summary for erpnext.localhost at 2025-06-02 12:00:20.118100
+Config  : /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250602_120007-erpnext_localhost-site_config_backup.json 213.0B
+Database: /home/nantenaina/Documents/GitHub/ErpNextLocal/sites/erpnext.localhost/private/backups/20250602_120007-erpnext_localhost-database.sql.gz 1004.0KiB
+Backup for Site erpnext.localhost has been successfully completed

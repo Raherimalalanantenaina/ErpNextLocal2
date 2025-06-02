@@ -77,3 +77,63 @@
 2025-05-30 15:34:30,214 INFO /home/nantenaina/.local/bin/bench serve --port 8000
 2025-05-30 15:34:30,278 INFO /home/nantenaina/.local/bin/bench watch
 2025-05-30 15:34:30,280 INFO /home/nantenaina/.local/bin/bench schedule
+2025-05-30 17:27:46,021 INFO /home/nantenaina/.local/bin/bench start
+2025-05-30 17:27:46,906 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-05-30 17:27:47,239 INFO /home/nantenaina/.local/bin/bench watch
+2025-05-30 17:27:47,439 INFO /home/nantenaina/.local/bin/bench worker
+2025-05-30 17:27:47,479 INFO /home/nantenaina/.local/bin/bench schedule
+2025-05-30 19:45:56,824 INFO /home/nantenaina/.local/bin/bench start
+2025-05-30 19:45:57,786 INFO /home/nantenaina/.local/bin/bench watch
+2025-05-30 19:45:57,794 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-05-30 19:45:57,821 INFO /home/nantenaina/.local/bin/bench worker
+2025-05-30 19:45:57,837 INFO /home/nantenaina/.local/bin/bench schedule
+2025-05-31 12:00:02,404 INFO /home/nantenaina/.local/bin/bench --verbose --site all backup
+2025-05-31 14:26:34,287 INFO /home/nantenaina/.local/bin/bench list-apps
+2025-05-31 14:27:07,105 INFO /home/nantenaina/.local/bin/bench list-app
+2025-05-31 14:27:15,020 INFO /home/nantenaina/.local/bin/bench list-apps
+2025-05-31 14:29:21,665 INFO /home/nantenaina/.local/bin/bench list-apps
+2025-05-31 14:30:14,024 INFO /home/nantenaina/.local/bin/bench list-apps
+2025-05-31 14:30:50,558 INFO /home/nantenaina/.local/bin/bench list-apps
+2025-05-31 14:31:05,449 INFO /home/nantenaina/.local/bin/bench --site erpnext.localhost list-documents
+2025-05-31 14:31:35,621 INFO /home/nantenaina/.local/bin/bench restart
+2025-05-31 14:31:36,062 DEBUG cd /home/nantenaina/Documents/GitHub/ErpNextLocal && supervisorctl restart frappe:
+2025-05-31 14:31:36,410 WARNING cd /home/nantenaina/Documents/GitHub/ErpNextLocal && supervisorctl restart frappe: executed with exit code 7
+2025-05-31 14:31:36,413 WARNING /home/nantenaina/.local/bin/bench restart executed with exit code 1
+2025-05-31 14:31:38,204 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-31 14:31:38,527 INFO /home/nantenaina/.local/bin/bench clear-cache
+2025-05-31 14:31:39,940 INFO /home/nantenaina/.local/bin/bench clear-website-cache
+2025-05-31 14:31:41,354 INFO /home/nantenaina/.local/bin/bench build
+2025-05-31 14:35:18,893 INFO /home/nantenaina/.local/bin/bench start
+2025-05-31 14:35:19,887 INFO /home/nantenaina/.local/bin/bench schedule
+2025-05-31 14:35:19,978 INFO /home/nantenaina/.local/bin/bench watch
+2025-05-31 14:35:20,065 INFO /home/nantenaina/.local/bin/bench worker
+2025-05-31 14:35:20,081 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-05-31 18:00:02,282 INFO /home/nantenaina/.local/bin/bench --verbose --site all backup
+2025-06-01 10:01:42,435 INFO /home/nantenaina/.local/bin/bench start
+2025-06-01 10:01:44,116 INFO /home/nantenaina/.local/bin/bench worker
+2025-06-01 10:01:44,119 INFO /home/nantenaina/.local/bin/bench schedule
+2025-06-01 10:01:44,317 INFO /home/nantenaina/.local/bin/bench watch
+2025-06-01 10:01:44,321 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-06-01 10:11:54,204 INFO /home/nantenaina/.local/bin/bench start
+2025-06-01 10:11:54,951 INFO /home/nantenaina/.local/bin/bench worker
+2025-06-01 10:11:55,342 INFO /home/nantenaina/.local/bin/bench schedule
+2025-06-01 10:11:55,419 INFO /home/nantenaina/.local/bin/bench watch
+2025-06-01 10:11:55,444 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-06-01 11:53:13,060 INFO /home/nantenaina/.local/bin/bench start
+2025-06-01 11:53:13,858 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-06-01 11:53:14,051 INFO /home/nantenaina/.local/bin/bench watch
+2025-06-01 11:53:14,073 INFO /home/nantenaina/.local/bin/bench schedule
+2025-06-01 11:53:14,177 INFO /home/nantenaina/.local/bin/bench worker
+2025-06-01 12:00:02,454 INFO /home/nantenaina/.local/bin/bench --verbose --site all backup
+2025-06-01 12:04:41,809 INFO /home/nantenaina/.local/bin/bench start
+2025-06-01 12:04:42,530 INFO /home/nantenaina/.local/bin/bench watch
+2025-06-01 12:04:42,870 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-06-01 12:04:43,039 INFO /home/nantenaina/.local/bin/bench schedule
+2025-06-01 12:04:43,137 INFO /home/nantenaina/.local/bin/bench worker
+2025-06-01 12:08:35,272 INFO /home/nantenaina/.local/bin/bench start
+2025-06-01 12:08:36,617 INFO /home/nantenaina/.local/bin/bench watch
+2025-06-01 12:08:36,821 INFO /home/nantenaina/.local/bin/bench worker
+2025-06-01 12:08:37,050 INFO /home/nantenaina/.local/bin/bench serve --port 8000
+2025-06-01 12:08:37,151 INFO /home/nantenaina/.local/bin/bench schedule
+2025-06-01 18:00:02,798 INFO /home/nantenaina/.local/bin/bench --verbose --site all backup
+2025-06-02 12:00:02,231 INFO /home/nantenaina/.local/bin/bench --verbose --site all backup
